@@ -17,7 +17,7 @@ Welcome to iBlog, the ultimate platform for sharing your experiences and knowled
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/meet-moradiya/Blog-Article-Writting-Website-Using-React.git
    ```
 
 2. Install dependencies:
