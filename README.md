@@ -2,7 +2,7 @@
 
 ## Summary
 
-Welcome to YourWebsiteName, the ultimate platform for sharing your experiences and knowledge through writing articles! Whether you're a seasoned writer or just starting out, our platform provides a space for you to showcase your expertise, learn from others, and engage with a community of like-minded individuals.
+Welcome to iBlog, the ultimate platform for sharing your experiences and knowledge through writing articles! Whether you're a seasoned writer or just starting out, our platform provides a space for you to showcase your expertise, learn from others, and engage with a community of like-minded individuals.
 
 ## Features
 
