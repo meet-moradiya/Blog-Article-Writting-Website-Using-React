@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.contain {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.contact-wrapper {
+  margin: auto 0;
+}
+
+.uline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 7px;
+  border-bottom: 3px solid #264653;
+}
+
+.highlight-text {
+  color: #4bb991;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.email-info {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .contain {
+    padding: 10px;
+  }
+  .uline:after {
+    width: 25%;
+  }
+}
+
+.form-input:focus,
+textarea:focus {
+  outline: 1.5px solid #264653;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  resize: none;
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+#submit-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.full-width {
+  grid-column: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input,
+textarea {
+  padding: 7px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.error {
+  color: #ec1c24;
+}

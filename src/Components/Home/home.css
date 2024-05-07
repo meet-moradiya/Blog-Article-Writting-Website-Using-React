@@ -1,0 +1,126 @@
+.mySlidBar {
+  margin: 30px 0;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-600px * 7));
+    transform: translateX(calc(-400px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-600px * 7));
+    transform: translateX(calc(-400px * 7));
+  }
+}
+
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 98vw; /* Changed to 90% of the viewport width */
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 400px; /* Adjusted height */
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(400px * 14); /* Adjusted width */
+}
+
+.slider .slide {
+  height: 300px; /* Adjusted height */
+  width: 400px; /* Adjusted width */
+  border: 2px solid #212a3e; /* Added border */
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.slider .slide img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.slider .slide p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #212a3e;
+}
+
+@media (max-width: 767px) {
+  .slider .slide-track {
+    -webkit-animation: scroll 25s linear infinite;
+    animation: scroll 25s linear infinite;
+  }
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 30%);
+  }
+}
+/* ########################### loading css ###################################  */
+
+.hypnotic {
+  width: 56px;
+  height: 48.496px;
+  display: grid;
+  background: linear-gradient(to bottom left, #0000 calc(50% - 1.1px), #3eb489 0 calc(50% + 1.1px), #0000 0) right/50% 100%,
+    linear-gradient(to bottom right, #0000 calc(50% - 1.1px), #3eb489 0 calc(50% + 1.1px), #0000 0) left / 50% 100%,
+    linear-gradient(#3eb489 0 0) bottom/100% 2.2px;
+  background-repeat: no-repeat;
+  transform-origin: 50% 66%;
+  animation: hypnotic-k788tl 4s infinite linear;
+}
+
+.hypnotic::before,
+.hypnotic::after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  transform-origin: inherit;
+  animation: inherit;
+}
+
+.hypnotic::after {
+  animation-duration: 2s;
+}
+
+@keyframes hypnotic-k788tl {
+  100% {
+    transform: rotate(1turn);
+  }
+}

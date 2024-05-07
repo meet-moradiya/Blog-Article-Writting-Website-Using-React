@@ -1,0 +1,37 @@
+@media (max-width: 560px) {
+  .test {
+    margin: 30px auto;
+    padding: 0;
+  }
+}
+
+.hypnotic {
+  width: 56px;
+  height: 48.496px;
+  display: grid;
+  background: linear-gradient(to bottom left, #0000 calc(50% - 1.1px), #3eb489 0 calc(50% + 1.1px), #0000 0) right/50% 100%,
+    linear-gradient(to bottom right, #0000 calc(50% - 1.1px), #3eb489 0 calc(50% + 1.1px), #0000 0) left / 50% 100%,
+    linear-gradient(#3eb489 0 0) bottom/100% 2.2px;
+  background-repeat: no-repeat;
+  transform-origin: 50% 66%;
+  animation: hypnotic-k788tl 4s infinite linear;
+}
+
+.hypnotic::before,
+.hypnotic::after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  transform-origin: inherit;
+  animation: inherit;
+}
+
+.hypnotic::after {
+  animation-duration: 2s;
+}
+
+@keyframes hypnotic-k788tl {
+  100% {
+    transform: rotate(1turn);
+  }
+}

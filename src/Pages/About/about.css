@@ -1,0 +1,78 @@
+.myclass {
+  margin: 50px 0;
+  background: #f1f6f9;
+}
+
+.showcase .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2.5rem;
+}
+
+.showcase .textbox {
+  flex: 1 1 400px;
+  padding: 2.5rem;
+  margin: auto;
+}
+
+.showcase .textbox h1 {
+  color: #212a3e;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.showcase .imgbox {
+  padding: 2rem;
+  flex: 1 1 350px;
+}
+
+.showcase .imgbox img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+.showcase .textbox p {
+  color: #394867;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+
+.showcase .heading1 {
+  color: #212a3e;
+  font-size: 3rem;
+  font-weight: 700;
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .showcase .h1-showcase {
+    display: none;
+  }
+  .showcase .heading1 {
+    display: inline;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .showcase .container {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  .showcase .container2 {
+    flex-direction: column;
+  }
+  .showcase .imgbox {
+    padding: 0;
+  }
+
+  .showcase .textbox {
+    padding: 0;
+  }
+}

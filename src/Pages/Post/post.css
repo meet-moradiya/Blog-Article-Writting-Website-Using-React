@@ -1,0 +1,18 @@
+@media (max-width: 560px) {
+  .title {
+    font-size: 24px;
+  }
+  .postBox {
+    flex-direction: column-reverse;
+    border: none;
+  }
+  .postBtn {
+    position: relative;
+    margin: 0 auto;
+    right: auto;
+  }
+  .deletebtn,
+  .editbtn {
+    margin: 7px;
+  }
+}

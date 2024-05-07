@@ -1,0 +1,6 @@
+@media (max-width: 560px) {
+  .social-media {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
