@@ -19,7 +19,7 @@ export default function RTE({ name, control, defaultValue = "" }) {
           control={control}
           render={({ field: { onChange } }) => (
             <Editor
-              apiKey="549i6ouwh2vxzj3hxiu8ih1zq6zcmsiw858dcwrvveawo9xq"
+              apiKey={process.env.REACT_APP_TINYMCE_API}
               initialValue={defaultValue}
               init={{
                 resize: false,
